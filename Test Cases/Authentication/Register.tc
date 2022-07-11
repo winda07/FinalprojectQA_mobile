@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Register</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1dd80c88-4dde-47d4-aa33-7f1b574ce580</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>adb270d0-79ac-4187-9490-2063ada8fe25</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>70db894b-918f-4844-bf29-f5c08e168984</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Cem+EfpH8pyspFnCX6ZcKg=='</defaultValue>
+      <description></description>
+      <id>adb270d0-79ac-4187-9490-2063ada8fe25</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cem+EfpH8pyspFnCX6ZcKg=='</defaultValue>
+      <description></description>
+      <id>70db894b-918f-4844-bf29-f5c08e168984</id>
+      <masked>false</masked>
+      <name>confirm_password</name>
+   </variable>
+</TestCaseEntity>

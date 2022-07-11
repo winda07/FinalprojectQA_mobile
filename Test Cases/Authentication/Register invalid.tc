@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Register invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4d2ed694-10e1-40a4-997c-b25873ca2cea</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>94cda0d9-abe8-4fc7-b65b-c31ac62e6070</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3cca35b9-60cf-4009-b166-ec0fdf7eee5f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'HodessIoe7ukdj9zv980GQ=='</defaultValue>
+      <description></description>
+      <id>94cda0d9-abe8-4fc7-b65b-c31ac62e6070</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>'HodessIoe7ukdj9zv980GQ=='</defaultValue>
+      <description></description>
+      <id>3cca35b9-60cf-4009-b166-ec0fdf7eee5f</id>
+      <masked>false</masked>
+      <name>confirm_password</name>
+   </variable>
+</TestCaseEntity>

@@ -16,4 +16,17 @@ Description: </description>
    </integratedEntity>
    <comment></comment>
    <testCaseGuid>8280111f-e5fa-4cdf-816c-afad2952cda3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60343171-0fa5-4f5e-98b5-deb58b19cb4b</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Cem+EfpH8pyspFnCX6ZcKg=='</defaultValue>
+      <description></description>
+      <id>60343171-0fa5-4f5e-98b5-deb58b19cb4b</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
 </TestCaseEntity>

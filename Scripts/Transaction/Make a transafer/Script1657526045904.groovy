@@ -17,19 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CucumberKW.runFeatureFile('Include/features/MP-3 Winda- TC Login Mobile.feature')
+WebUI.callTestCase(findTestCase('MP-3 Winda- TC Login Mobile'), [('password') : 'Cem+EfpH8pyspFnCX6ZcKg=='], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.startExistingApplication(GlobalVariable.AppID, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Transaction/btn_hamburger'), 0)
 
-Mobile.clearText(findTestObject('Authentication/Input_usernamee'), 0)
+Mobile.tap(findTestObject('Transaction/transfer/make_a_transfer'), 0)
 
-Mobile.setText(findTestObject('Authentication/Input_usernamee'), 'akuntestlagi', 0)
+Mobile.tap(findTestObject('Transaction/transfer/select_dropdown_sending'), 0)
 
-Mobile.clearText(findTestObject('Authentication/Input_passwordd'), 0)
+Mobile.tap(findTestObject('Transaction/transfer/acc_winda'), 0)
 
-Mobile.setEncryptedText(findTestObject('Authentication/Input_passwordd'), password, 0)
+Mobile.tap(findTestObject('Transaction/transfer/input_transfer_amount'), 0)
 
-Mobile.tap(findTestObject('Authentication/btn_login'), 0)
+Mobile.setText(findTestObject('Transaction/transfer/input_transfer_amount'), '50000', 0)
 
-Mobile.verifyElementVisible(findTestObject('Authentication/verify_success_login'), 0)
+Mobile.tap(findTestObject('Transaction/transfer/select_dropdown_sending'), 0)
+
+Mobile.tap(findTestObject('Transaction/transfer/acc_ce'), 0)
+
+Mobile.tap(findTestObject('Transaction/transfer/confirm_transfer'), 0)
 
