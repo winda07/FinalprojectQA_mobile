@@ -16,20 +16,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-CucumberKW.runFeatureFile('Include/features/MP-3 Winda- TC Login Mobile.feature')
+WebUI.callTestCase(findTestCase('MP-3 Winda- TC Login Mobile'), [('password') : 'Cem+EfpH8pyspFnCX6ZcKg=='], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.startExistingApplication(GlobalVariable.AppID, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Transaction/btn_hamburger'), 0)
 
-Mobile.clearText(findTestObject('Authentication/Input_usernamee'), 0)
+Mobile.tap(findTestObject('Authentication/logout'), 0)
 
-Mobile.setText(findTestObject('Authentication/Input_usernamee'), 'akuntestlagi', 0)
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
 
-Mobile.clearText(findTestObject('Authentication/Input_passwordd'), 0)
+def toast = driver.findElementByXPath('//android.widget.Toast[@text=\'Logging out\']')
 
-Mobile.setEncryptedText(findTestObject('Authentication/Input_passwordd'), password, 0)
+println('Toast : ' + toast)
 
-Mobile.tap(findTestObject('Authentication/btn_login'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Authentication/dashboard'), 0)
+if (toast == null) {
+    KeywordUtil.markFailed('ERROR: Toast object not found!')
+}
 
