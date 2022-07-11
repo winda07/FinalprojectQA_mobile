@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Add accounts transaction</name>
+   <name>Add account transaction</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b1bf031b-c138-4b1f-8700-9b0897fe069e</testCaseGuid>
