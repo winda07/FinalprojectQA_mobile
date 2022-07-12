@@ -16,20 +16,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-CucumberKW.runFeatureFile('Include/features/MP-3 Winda- TC Login Mobile.feature')
+WebUI.callTestCase(findTestCase('MP-3 Winda- TC Login Mobile'), [('password') : 'Cem+EfpH8pyspFnCX6ZcKg=='], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.startExistingApplication(GlobalVariable.AppID, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Transaction/btn_hamburger'), 0)
 
-Mobile.clearText(findTestObject('Authentication/Input_usernamee'), 0)
+Mobile.tap(findTestObject('Payment/select_payment'), 0)
 
-Mobile.setText(findTestObject('Authentication/Input_usernamee'), 'akuncobaaa', 0)
+Mobile.tap(findTestObject('Payment/select_from'), 0)
 
-Mobile.clearText(findTestObject('Authentication/Input_passwordd'), 0)
+Mobile.tap(findTestObject('Payment/dropdown_select_account'), 0)
 
-Mobile.setEncryptedText(findTestObject('Authentication/Input_passwordd'), password, 0)
+Mobile.tap(findTestObject('Payment/select_for'), 0)
 
-Mobile.tap(findTestObject('Authentication/btn_login'), 0)
+Mobile.tap(findTestObject('Payment/dropdown_select_payee'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Authentication/dashboard'), 0)
+Mobile.setText(findTestObject('Payment/input_amount'), amount, 0)
+
+Mobile.tap(findTestObject('Payment/make_payment'), 0)
+
+AppiumDriver<?> driver = MobileDriverFactory.getDriver()
+
+def toast = driver.findElementByXPath('//android.widget.Toast[1]')
+
+println('Toast : ' + toast)
+
+if (toast == null) {
+    KeywordUtil.markFailed('ERROR: Toast object not found!')
+}
+
+driver.terminateApp('com.example.mikebanks.bankscorpfinancial')
 

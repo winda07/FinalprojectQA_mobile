@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b1bf031b-c138-4b1f-8700-9b0897fe069e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0e28febc-10f5-4589-b3ee-0437266a3aac</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a889ee37-56aa-4196-b9d1-fd64e0c6d6c1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0e28febc-10f5-4589-b3ee-0437266a3aac</id>
+      <masked>false</masked>
+      <name>accountname</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a889ee37-56aa-4196-b9d1-fd64e0c6d6c1</id>
+      <masked>false</masked>
+      <name>initbalance</name>
+   </variable>
 </TestCaseEntity>

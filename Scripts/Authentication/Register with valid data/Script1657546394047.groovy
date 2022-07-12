@@ -38,7 +38,7 @@ Mobile.setText(findTestObject('Authentication/country'), 'Indonesia', 0)
 
 Mobile.tap(findTestObject('Authentication/username'), 0)
 
-Mobile.setText(findTestObject('Authentication/username'), 'akuntestlagi', 0)
+Mobile.setText(findTestObject('Authentication/username'), 'akuncobaacoba', 0)
 
 Mobile.tap(findTestObject('Authentication/password'), 0)
 

@@ -30,11 +30,11 @@ Mobile.tap(findTestObject('Transaction/btn_add_accounts'), 0)
 
 Mobile.tap(findTestObject('Transaction/set_account_name'), 0)
 
-Mobile.setText(findTestObject('Transaction/set_account_name'), 'ce', 0)
+Mobile.setText(findTestObject('Transaction/set_account_name'), accountname, 0)
 
 Mobile.tap(findTestObject('Transaction/set_initial_balance'), 0)
 
-Mobile.setText(findTestObject('Transaction/set_initial_balance'), '7000000', 0)
+Mobile.setText(findTestObject('Transaction/set_initial_balance'), initbalance, 0)
 
 Mobile.tap(findTestObject('Transaction/btn_add'), 0)
 
@@ -47,4 +47,6 @@ println('Toast : ' + toast)
 if (toast == null) {
     KeywordUtil.markFailed('ERROR: Toast object not found!')
 }
+
+driver.terminateApp('com.example.mikebanks.bankscorpfinancial')
 
