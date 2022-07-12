@@ -72,7 +72,7 @@
       <guid>e6ba446a-0302-4716-8ffc-5b58ca0b8ab0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Transaction/Make a transafer</testCaseId>
+      <testCaseId>Test Cases/Transaction/Make a transfer</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
